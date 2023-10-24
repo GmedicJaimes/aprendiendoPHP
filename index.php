@@ -1,15 +1,16 @@
 <?php 
-  $nombre = 'Gulliano Medic Jaimes'
-?>
+  // $nombre = 'Gulliano Medic Jaimes'
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Probando PHP</title>
-</head>
-<body>
-  <h2><?php echo "Hola mundo mi nombre es $nombre"; ?></h2>
-</body>
-</html>
+  //las constantes se declaran de la siguiente manera:
+  define('CURSO', 'Aprendiendo php 8 desde cero');
+  // echo CURSO;
+
+  define('ANIMALES' , [
+    'perro',
+    'gato',
+    'loro',
+    'rinoceronte'
+  ]);
+
+  echo ANIMALES[3];
+?>
