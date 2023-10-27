@@ -21,7 +21,7 @@ echo $valor;
 echo '<br>';
 
 
-$color = 'verde';
+$color = 3;
 
 //seleccion multiple
 switch ($color) {
@@ -33,7 +33,7 @@ switch ($color) {
     echo 'Color del sol';
     break;
 
-  case 'rojo':
+  case '3':
     echo 'Color que molesta a los toros';
     break;
 
@@ -45,6 +45,6 @@ switch ($color) {
 echo '<br>';
 
 echo match ($color) {
-  'azul' => 'Color del cielo',
-  'verde' => 'Color de las praderas',
+  // '3' => 'Color del cielo',
+  3 => 'Numero'
 };
