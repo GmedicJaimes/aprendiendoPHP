@@ -21,7 +21,7 @@ echo $valor;
 echo '<br>';
 
 
-$color = 3;
+$color = 'amarillo';
 
 //seleccion multiple
 switch ($color) {
@@ -33,7 +33,7 @@ switch ($color) {
     echo 'Color del sol';
     break;
 
-  case '3':
+  case 'rojo':
     echo 'Color que molesta a los toros';
     break;
 
@@ -45,6 +45,23 @@ switch ($color) {
 echo '<br>';
 
 echo match ($color) {
-  // '3' => 'Color del cielo',
-  3 => 'Numero'
+  'azul' => 'Color del cielo',
+  'amarillo' => 'Color de los girasoles',
+  default => 'Estas equivocado'
 };
+
+echo '<br>';
+
+//bucles repetitivos
+
+$num = 0;
+
+while ($num <= 10) {
+  echo ++$num;
+
+  if (($num % 2) === 0) {
+    echo ' Eres par <br>';
+  } else {
+    echo ' Eres impar <br>';
+  }
+}
