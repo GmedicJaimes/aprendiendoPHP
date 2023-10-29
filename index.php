@@ -52,10 +52,11 @@ echo match ($color) {
 
 echo '<br>';
 
-//bucles repetitivos
+//Estructuras repetitivas o bucles
 
 $num = 0;
 
+//? while
 while ($num <= 9) {
   echo ++$num;
 
@@ -66,8 +67,38 @@ while ($num <= 9) {
   }
 }
 
-
+//? do while
 do {
   echo 'Probando el do while';
   $num++;
 } while ($num < 10);
+
+
+//? for
+
+$filas = 10;
+
+for ($i = 0; $i <= $filas; $i++) {
+  for ($j = 0; $j < $i; $j++) {
+    echo "*";
+  }
+  echo '<br>';
+};
+
+//? FOREACH
+//* en php existen dos formas de escribir arrays, usando los [] o usando la funcion array().
+
+$nombres = ['Dayana', 'Gulliano', 'Daniel'];
+
+foreach ($nombres as $nombre) {
+  # code...
+  echo $nombre . PHP_EOL;
+}
+
+echo '<br>';
+
+$array = array(1, 2, 3, 4);
+foreach ($array as &$valor) {
+  $valor = $valor * 2;
+  echo $valor . PHP_EOL;
+}
