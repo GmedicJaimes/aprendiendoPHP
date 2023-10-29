@@ -56,7 +56,7 @@ echo '<br>';
 
 $num = 0;
 
-while ($num <= 10) {
+while ($num <= 9) {
   echo ++$num;
 
   if (($num % 2) === 0) {
@@ -65,3 +65,9 @@ while ($num <= 10) {
     echo ' Eres impar <br>';
   }
 }
+
+
+do {
+  echo 'Probando el do while';
+  $num++;
+} while ($num < 10);
