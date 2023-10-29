@@ -98,7 +98,7 @@ foreach ($nombres as $nombre) {
 echo '<br>';
 
 $array = array(1, 2, 3, 4);
-foreach ($array as &$valor) {
+foreach ($array as $indice => $valor) {
   $valor = $valor * 2;
-  echo $valor . PHP_EOL;
+  echo $valor . " y su posición es $indice <br>";
 }
