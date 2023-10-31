@@ -100,5 +100,29 @@ echo '<br>';
 $array = array(1, 2, 3, 4);
 foreach ($array as $indice => $valor) {
   $valor = $valor * 2;
-  echo $valor . " y su posición es $indice <br>";
+  echo " el numero es $valor  y su posición es $indice <br>";
 }
+
+
+//? funciones en php
+
+$arg = true;
+
+function name($arg)
+{
+  if ($arg) {
+    echo 'tenemos valores para argumentar';
+  }
+};
+
+name($arg);
+
+echo '<br>';
+
+function hacer_cafe($tipo = 'cafe con leche')
+{
+  echo "hacer una taza de $tipo.\n";
+}
+
+hacer_cafe();
+hacer_cafe("cafe tinto");
