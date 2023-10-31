@@ -121,8 +121,25 @@ echo '<br>';
 
 function hacer_cafe($tipo = 'cafe con leche')
 {
-  echo "hacer una taza de $tipo.\n";
+  echo "hacer una taza de $tipo.\n <br>";
 }
 
-hacer_cafe();
+hacer_cafe(); //llamado de la funcion
 hacer_cafe("cafe tinto");
+
+
+function factorial($num)
+{
+  $resultado = 1;
+
+  for ($i = 1; $i <= $num; $i++) {
+    # code...
+    $resultado = $resultado * $i;
+  }
+
+  return $resultado;
+}
+
+$valor = factorial(6);
+
+echo "el factorial del numero es: $valor ";
