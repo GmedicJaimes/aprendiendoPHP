@@ -142,4 +142,48 @@ function factorial($num)
 
 $valor = factorial(6);
 
-echo "el factorial del numero es: $valor ";
+echo "el factorial del numero es: $valor <br>";
+
+
+//? Ambito de las variables globales o locales
+
+$nombre = 'gulliano';
+
+function nombre()
+{
+  global $nombre; //variable global usada en una funcion
+  echo $nombre . " dentro de la funcion <br>";
+
+  $numero = 4; //variable local
+  echo "Tengo $numero años de vivir con mi mujer <br>";
+}
+
+nombre();
+echo $nombre . ' fuera de la funcion <br>';
+
+
+//? argumentos fijos y variables
+
+function mostrar($ciudad) //argumento fijo, se espera recibir un solo argumento
+{
+  echo $ciudad;
+}
+
+mostrar('Cúcuta');
+
+echo "<br>";
+
+function suma(...$suma_numeros) //argumento variable, acepta mas de un argumento, si no se sabe cuantos va a recibir
+{
+
+  $total = 0;
+
+  foreach ($suma_numeros as  $numero) {
+    # code...
+    $total += $numero;
+  }
+
+  echo "La suma total es: $total";
+}
+
+suma(2, 50, 48);
