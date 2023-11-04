@@ -206,8 +206,26 @@ echo '<br>';
 
 //? cadena de strings
 
-$cadena = 'aeiou';
+$cadena = 'Dayana jaimes y Gulliano Jaimes';
 
 echo $cadena[3];
+echo '<br>';
 
-// echo strlen($cadena);
+echo mb_strlen($cadena);
+echo '<br>';
+
+echo str_contains($cadena, 'Gulliano') ? 'Si se encuentra' : 'No se encuentra';
+echo '<br>';
+
+echo str_replace('&', 'y', $cadena);
+echo '<br>';
+
+
+
+//? Arrays unidimensionales
+
+$array = []; //inicializacion de un array vacio
+
+$array[] = 'tierra'; //de esta manera añadios un valor a nuestro array
+
+echo $array[0];
