@@ -193,7 +193,7 @@ echo '<br>';
 
 //? funciones con tipado definido 
 
-declare(strict_types=1);
+// declare(strict_types=1);
 
 function soloStrings(string $valor1, int $valor2)
 {
@@ -201,3 +201,13 @@ function soloStrings(string $valor1, int $valor2)
 }
 
 echo soloStrings("Todo yo", 3);
+
+echo '<br>';
+
+//? cadena de strings
+
+$cadena = 'aeiou';
+
+echo $cadena[3];
+
+// echo strlen($cadena);
