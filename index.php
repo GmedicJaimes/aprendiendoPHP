@@ -187,3 +187,17 @@ function suma(...$suma_numeros) //argumento variable, acepta mas de un argumento
 }
 
 suma(2, 50, 48);
+
+echo '<br>';
+
+
+//? funciones con tipado definido 
+
+declare(strict_types=1);
+
+function soloStrings(string $valor1, int $valor2)
+{
+  return $valor1 . ' ' . $valor2;
+}
+
+echo soloStrings("Todo yo", 3);
