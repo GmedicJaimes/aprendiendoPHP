@@ -229,3 +229,15 @@ $array = []; //inicializacion de un array vacio
 $array[] = 'tierra'; //de esta manera añadios un valor a nuestro array
 
 echo $array[0];
+echo '<br>';
+
+
+$array_two = [
+  'nombre' => 'Karen Dayana Jaimes',
+  'email' => '',
+  'celular' => 3142924255
+];
+
+$array_two['email'] = 'kdaza234@gmail.com';
+
+echo $array_two['email'];
