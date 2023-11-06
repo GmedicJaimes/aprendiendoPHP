@@ -240,4 +240,39 @@ $array_two = [
 
 $array_two['email'] = 'kdaza234@gmail.com';
 
-echo $array_two['email'];
+echo $array_two['celular'];
+echo '<br>';
+
+//? Arrays multidimensionales
+
+// asi se representa un array multidimensional
+
+$data = [
+  [
+    'nombre' => 'Mustang chelvy',
+    'año' => '2024',
+    'motor' => '3.8v'
+  ],
+  [
+    'nombre' => 'Audi V8',
+    'año' => '2019',
+    'motor' => '2.0v',
+    'dueño' => [
+      'nombre' => 'Gulliano',
+      'apellido' => 'Medic Jaimes',
+      'años' => '24',
+      'ubicacion' => [
+        'pais' => 'Colombia',
+        'departamento' => 'Norte de santander',
+        'ciudad' => 'Cucuta'
+      ]
+    ]
+  ],
+  [
+    'nombre' => 'Porsche 911',
+    'año' => '2021',
+    'motor' => '6.0v'
+  ]
+];
+
+echo $data[1]['nombre'];
