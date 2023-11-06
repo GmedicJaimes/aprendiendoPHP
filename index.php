@@ -15,7 +15,7 @@ if ($num1 < $num2) {
 echo 'Tercer parrafo <br>';
 
 
-//operadores ternarios
+//? operadores ternarios
 $valor = $num1 > $num2 ? 'mayor' : ($num1 < $num2 ? 'menor' : 'igual');
 echo $valor;
 echo '<br>';
@@ -23,7 +23,7 @@ echo '<br>';
 
 $color = 'amarillo';
 
-//seleccion multiple
+//? seleccion multiple
 switch ($color) {
   case 'azul':
     echo 'Color del cielo';
@@ -52,11 +52,11 @@ echo match ($color) {
 
 echo '<br>';
 
-//Estructuras repetitivas o bucles
+//? Estructuras repetitivas o bucles
 
 $num = 0;
 
-//? while
+//? WHILE
 while ($num <= 9) {
   echo ++$num;
 
@@ -67,14 +67,14 @@ while ($num <= 9) {
   }
 }
 
-//? do while
+//? DO WHILE
 do {
   echo 'Probando el do while';
   $num++;
 } while ($num < 10);
 
 
-//? for
+//? FOR
 
 $filas = 10;
 
@@ -276,3 +276,38 @@ $data = [
 ];
 
 echo $data[1]['nombre'];
+echo '<br>';
+
+$data[1]['dueño']['nombre'] = 'Fabiola';
+
+echo $data[1]['dueño']['nombre'] . '<br>';
+
+
+foreach ($data as $item) {
+  # code...
+  echo '<hr>';
+
+  echo $item['nombre'] . '<br>';
+  echo $item['año'] . '<br>';
+  echo $item['motor'] . '<br>';
+
+  echo '<hr>';
+}
+
+echo '<br>';
+
+//? funciones para arrays
+
+$numeros = [1, 2, 3, 4, 5];
+
+list($a, $b, $c, $d) = $numeros; // al usar esta funcion, declaramos en cada variable un indice de nuestro array. 
+
+echo $b;
+echo '<br>';
+
+$arrays = range(100, 1000, 100); // crea un array de numeros, segun los datos especificados que le demos.
+
+foreach ($arrays as $value) {
+  # code...
+  echo $value . ' ';
+}
