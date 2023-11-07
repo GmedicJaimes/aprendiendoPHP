@@ -311,3 +311,15 @@ foreach ($arrays as $value) {
   # code...
   echo $value . ' ';
 }
+
+echo '<br>';
+
+// eliminamos un elemento de nuestro array
+unset($numeros[2]);
+
+// verificamos si existe un elemento dentro de nuestro array
+if (in_array(5, $numeros)) {
+  echo 'Si existe el numero dentro de este array';
+} else {
+  echo 'No existe el numero dentro de este array';
+}
